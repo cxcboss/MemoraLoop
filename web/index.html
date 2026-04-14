@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memora 控制台</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <aside class="panel nav-panel">
+        <h1>Memora</h1>
+        <p class="subtitle">智能管理助手</p>
+        <nav id="nav"></nav>
+        <div class="hint">MD3 Minimal · OpenClaw 风格参考</div>
+      </aside>
+
+      <section class="panel content-panel">
+        <header class="section-head">
+          <h2 id="section-title">系统概览</h2>
+          <span class="chip">Realtime Loop</span>
+        </header>
+        <div id="section-content" class="cards"></div>
+      </section>
+
+      <section class="panel chat-panel">
+        <header class="section-head">
+          <h2>认知助手</h2>
+          <span class="chip">newapi</span>
+        </header>
+        <div id="messages" class="messages"></div>
+        <form id="chat-form" class="composer">
+          <textarea id="prompt" rows="3" placeholder="输入你的问题，例如：请给出今天的任务规划"></textarea>
+          <button type="submit">发送</button>
+        </form>
+      </section>
+    </main>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
